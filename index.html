@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Pagina web orientada a un Portfolio, contiene un Navbar responsive, 3 animaciones, un footer responsive, un carrusel, 5 secciones distintas, toda la pagina en respondive, un formulario de contacto-->
+    <title>Portfolio</title>
+    <!--Link a archivo CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Otros Links que pueden ser fuentes o a paginas de iconos-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+
+
+</head>
+<header>
+    <!--Navbar hamburguesa-->
+    <div class="nav-responsive" id="abrir">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!--Navbar-->
+    <nav>
+        
+        <ul>
+            <!--Lista de navbar-->
+            <div class="row" id="list-row">
+                
+                <li class="nav-list-row"><a href="#" class="list-row-inside" >Home</a> </li>
+                <li class="nav-list-row"><a href="#abt" class="list-row-inside" >About me</a></li>
+                <li class="nav-list-row"><a href="#services" class="list-row-inside" >Services</a></li>
+                <li class="nav-list-row"><a href="#portfolio" class="list-row-inside" >Portfolio</a></li>
+                <!--Boton de contacto con animacion-->
+                <li class="nav-list-row"><a href="#contacto" class="nav-ctt-btn" >Let's get in touch</a></li>
+                
+            </div>
+            
+        </ul>
+    </nav>
+
+
+</header>
+
+<body>
+
+<!--Main de la pagina o bienvenida con texto, boton de descarga de cv y logotipo con animacion-->
+        <div class="welcome-website">
+            <!--Logotipo-->
+            <div class="img-wwb">
+                <img class="logo-principal" src="media/RM.png" alt="">
+            </div>
+            <!--Parte de texto con boton de descarga-->
+            <div class="side-wwb">
+                <!--Titulo de la seccion-->
+                <h1 class="welcome-website-title">Hello, I'm Richard</h1>
+                <!--Parte de texto introductorio-->
+                <p class="welcome-website-text">This is my website where you can find my latest projects. If you want to
+                    take a look at my CV, don't hesitate to click the download button.</p>
+                    <!--Seccion de redes con iconos sacados de una pagina y ademas estas dentro de un circulo hecho con css y cada logitpo esta movido con position:absolute y un translate-->
+                    <div class="redes">
+                        <a href="#" ><i class="fa-brands fa-facebook-f" ></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-skype" ></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in" ></i></a>
+                        <a href="#"><i class="fa-solid fa-rss" ></i></a>
+                    </div>    
+                    <!--Boton de descarga de CV con animacion-->
+                    <a href="#" class="welcome-website-btn-dwl">Download CV</a>     
+            </div>    
+        </div>
+
+<!--Seccion About-me-->
+    <div class="about-me" id="abt">
+
+        <!--Contenido-->
+        <div class="content-abt-me">
+            <!--Titulo-->
+            <h1 class="title-abt-me">About me</h1>
+            <!--Parrafor principal-->
+            <p class="text-abt-me">Hello my name is Richard, Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti
+                repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.</p>
+
+            <!--Tabla de datos-->
+            <h2 class="title-datos">Personal data</h2>
+            <div class="content-aboutme">
+                <div class="lists-abt-me">
+
+                    <!--Lista 1-->
+                    <ul>
+                        <li class="li-abt-me">Date birth</li>
+                        <li class="li-abt-me">Phone</li>
+                        <li class="li-abt-me">Email</li>
+                        <li class="li-abt-me">Address</li>
+                    </ul>
+                    <!--Lista 2-->
+                    <ul>
+                        <li class="li-abt-me">19 yr/o</li>
+                        <li class="li-abt-me">666 666 666</li>
+                        <li class="li-abt-me">rmakovs@iesmordefuentes.com</li>
+                        <li class="li-abt-me">Monzon, Huesca, Spain, 22400</li>
+                    </ul>
+
+                </div>
+                <!--Carrusel de lenguajes de codigo con un script para que los botones hagan la funcion de mover la imagen cuando presiones sobre ellos-->
+                <div class="center">
+                    <div class="carusel_cont">
+                        <!--Cuando cliques el boton de izquierda se moveran hacia la izquierda las imagenes-->
+                        <button onclick="plusSlides(-1)"> ❮ </button>
+            
+                        <!--Cada es una imagen con su respectivo width-->
+                        <div class="img_carusel_cont fade">
+                            <img src="media/html.png" width="100%">
+                        </div>
+            
+                        <div class="img_carusel_cont fade">
+                            <img src="media/CSS-Logo.png" width="125%">
+                        </div>
+            
+                        <div class="img_carusel_cont fade">
+                            <img src="media/js.png" width="100%">
+                        </div>
+            
+                        <div class="img_carusel_cont fade">
+                            <img src="media/mysql.png" width="100%">
+                        </div>
+            
+                        <div class="img_carusel_cont fade">
+                            <img src="media/phyton.png" width="100%">
+                        </div>
+                        
+                        <!--Cuando cliques el boton de derecha se moveran hacia la derecha las imagenes-->
+                        <button onclick="plusSlides(1)"> ❯ </button>
+                    </div>
+            
+                    <!--Seccion que esta debajo del carrusel que muestra en que foto te encuentras-->
+                    <div class="dot_cont">
+                        <div onclick="currentSlide(1)" class="dot "></div>
+                        <div onclick="currentSlide(2)" class="dot "></div>
+                        <div onclick="currentSlide(3)" class="dot active"></div>
+                        <div onclick="currentSlide(4)" class="dot "></div>
+                        <div onclick="currentSlide(5)" class="dot "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Seccion services-->
+    <div class="services" id="services">
+
+        <!--Titulo de la sección-->
+        <h1 class="text-services">Services</h1>
+        <!--Servicios que se ofrecen, 3 tablas distribuidas en flex row, en responsive sera column-->
+        <div class="services-cc">
+            <!--Seccion Ui/Ux Designer-->
+            <div class="services-content">
+                <img src="media/grid.svg" alt="">
+                <h2>Ui/Ux <br> Designer</h2>
+                <a href="#">View More</a>
+            </div>
+            <!--Seccion Frontend Developer-->
+            <div class="services-content">
+                <img src="media/arrow.svg" alt="">
+                <h2>Frontend <br> Developer</h2>
+                <a href="#">View More</a>
+            </div>
+            <!--Seccion Branding Designer-->
+            <div class="services-content">
+                <img src="media/pen.svg" alt="">
+                <h2>Branding <br> Designer</h2>
+                <a href="#">View More</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Linea fina seperadora-->
+    <div class="separator"></div>
+
+    <!--Seccion Portfolio-->
+    <section id="portfolio" class="portfolio">
+        <!--Conteido de la seccion-->
+        <div class="contenido-seccion">
+            <!--Titulo-->
+            <h2 class="text-pjts">Portfolio</h2>
+            <!--Cada div es una imagen con su respectivo texto con una animacion que despliega el texto con una transicion y vuelve el fondo de color azul claro-->
+            <div class="galeria">
+                <!--Proyecto Creative Design-->
+                <div class="proyecto">
+                    <img src="media/project1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Creative Design</h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+                <!--Proyecto Web Desing-->
+                <div class="proyecto">
+                    <img src="media/project2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Web Desing</h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+                <!--Proyecto Application Design-->
+                <div class="proyecto">
+                    <img src="media/project3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Application Design</h3>
+                        <p>Developer</p>
+                    </div>
+                </div>
+                <!--Proyecto Computer systems-->
+                <div class="proyecto">
+                    <img src="media/project4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Computer systems</h3>
+                        <p>Windows, Linux, IOS</p>
+                    </div>
+                </div>
+                <!--Proyecto Hosting-->
+                <div class="proyecto">
+                    <img src="media/project5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Hosting</h3>
+                        <p>Azure</p>
+                    </div>
+                </div>
+                <!--Proyecto Coding-->
+                <div class="proyecto">
+                    <img src="media/project6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Coding</h3>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Formulario de contacto-->
+    <div class="formcontact" id="contacto">
+
+        <!--Info de mis datos de dirreccion-->
+        <div>
+            <div class="info">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Av. Pueyo, 89, 22400 Monzón, Huesca
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        Llamanos: +34 666-666-666
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: rmakovs@iesmordefuentes.com
+                    </li>
+                </ul>
+            </div>
+            <!--Mapa sacado de google maps-->
+            <iframe class="mapa-ubi"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.5597374437484!2d0.18573498455618925!3d41.90232456080382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a777cb82c281eb%3A0xb7f5ef022e6cb7e2!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Jos%C3%A9%20Mor%20de%20Fuentes!5e0!3m2!1ses!2ses!4v1683633650884!5m2!1ses!2ses"
+                width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                
+        </div>
+
+        <!--Formulario-->
+        <div>
+            <!--Titulo-->
+            <h1 class="form-title">Do not hesitate to contact me!</h1>
+
+            <!--formulario dividido en 3 para poder hacer flexbox-->
+            <form action="contactform" class="contact">
+
+                <div class="contact1">
+                    <input type="text" placeholder="Name">
+
+                    <input type="text" placeholder="Lastname">
+                </div>
+
+                <div class="contact2">
+                    <input type="mail" placeholder="Mail">
+
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+
+                <textarea name="comment" id="comment" cols="80" rows="5" placeholder="Message"></textarea>
+
+            </form>
+            <!--Boton de enviar-->
+            <a href="#" class="button">Submit</a>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+
+        <!--Distribuido en 3 div para porder hacer flex colum y repartirlos por secciones-->
+        <div>
+            <div class="images-footer"><img class="img-footer" src="media/facebook.png" alt=""><img class="img-footer" src="media/gorjeo.png" alt=""><img class="img-footer" src="media/instagram.png" alt=""><img class="img-footer" src="media/youtube.png" alt=""><img class="img-footer" src="media/linkedin.png" alt=""></div>
+            <div class="topic-footer"><a href="#" class="text-footer" >HOME</a><span class="plus">+</span><a href="#portfolio" class="text-footer">MY WORK</a><span class="plus">+</span><a href="#services" class="text-footer">SERVICES</a><span class="plus">+</span><a href="#contacto" class="text-footer">CONTACT ME</a></div>
+            <div class="made-by-text"><span class="p-text">Portfolio</span><span class="by-text">By</span><span class="rm-text">Richard Makov</span></div>
+        </div>
+    </footer>
+
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+        <!--Portfolio made by Richard Makov DAW 1-->
+        <!--rmakovs@iesmordefuentes.com-->
+</html>

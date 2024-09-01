@@ -1,0 +1,124 @@
+{
+    "contact": {
+      "title": "Do not hesitate to contact me!",
+      "formAction": "contactform",
+      "inputs": [
+        {
+          "type": "text",
+          "placeholder": "Name"
+        },
+        {
+          "type": "text",
+          "placeholder": "Lastname"
+        },
+        {
+          "type": "mail",
+          "placeholder": "Mail"
+        },
+        {
+          "type": "tel",
+          "placeholder": "Phone Number"
+        }
+      ],
+      "textarea": {
+        "name": "comment",
+        "id": "comment",
+        "cols": 80,
+        "rows": 5,
+        "placeholder": "Message"
+      },
+      "button": {
+        "text": "Submit",
+        "href": "#"
+      }
+    },
+    "portfolio": {
+      "sectionId": "portfolio",
+      "sectionClass": "portfolio",
+      "content": {
+        "divClass": "contenido-seccion",
+        "title": "Portfolio",
+        "gallery": [
+          {
+            "project": "Creative Design",
+            "imageSrc": "media/project1.jpg",
+            "overlay": {
+              "title": "Creative Design",
+              "subtitle": "Developer"
+            }
+          },
+          {
+            "project": "Web Desing",
+            "imageSrc": "media/project2.jpg",
+            "overlay": {
+              "title": "Web Desing",
+              "subtitle": "Developer"
+            }
+          },
+          {
+            "project": "Application Design",
+            "imageSrc": "media/project3.jpg",
+            "overlay": {
+              "title": "Application Design",
+              "subtitle": "Developer"
+            }
+          },
+          {
+            "project": "Computer systems",
+            "imageSrc": "media/project4.jpg",
+            "overlay": {
+              "title": "Computer systems",
+              "subtitle": "Windows, Linux, IOS"
+            }
+          },
+          {
+            "project": "Hosting",
+            "imageSrc": "media/project5.jpg",
+            "overlay": {
+              "title": "Hosting",
+              "subtitle": "Azure"
+            }
+          },
+          {
+            "project": "Coding",
+            "imageSrc": "media/project6.jpg",
+            "overlay": {
+              "title": "Coding",
+              "subtitle": "Software Developer"
+            }
+          }
+        ]
+      }
+    },
+    "services": {
+      "sectionClass": "services",
+      "sectionId": "services",
+      "title": "Services",
+      "services": [
+        {
+          "iconSrc": "media/grid.svg",
+          "title": "Ui/Ux Designer",
+          "link": {
+            "text": "View More",
+            "href": "#"
+          }
+        },
+        {
+          "iconSrc": "media/arrow.svg",
+          "title": "Frontend Developer",
+          "link": {
+            "text": "View More",
+            "href": "#"
+          }
+        },
+        {
+          "iconSrc": "media/pen.svg",
+          "title": "Branding Designer",
+          "link": {
+            "text": "View More",
+            "href": "#"
+          }
+        }
+      ]
+    }
+  }
